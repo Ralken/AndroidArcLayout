@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Arc-Layout/Arc-Layout.iml" filepath="$PROJECT_DIR$/../Arc-Layout/Arc-Layout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arc-Layout-Sample.iml" filepath="$PROJECT_DIR$/Arc-Layout-Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../ArcLayout-Sample.iml" filepath="$PROJECT_DIR$/../ArcLayout-Sample.iml" />
+    </modules>
+  </component>
+</project>
