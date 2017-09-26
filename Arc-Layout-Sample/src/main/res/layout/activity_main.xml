@@ -25,38 +25,26 @@
     <cn.ralken.library.arclayout.CircleLayout
         android:id="@+id/mCircleLayout"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="200dp"
         android:layout_gravity="bottom">
 
         <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_image" />
+        <cn.ralken.library.arclayout.CustomImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_image" />
+        <cn.ralken.library.arclayout.CustomImageView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test_image" />
+        <cn.ralken.library.arclayout.CustomImageView
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:src="@drawable/test_image" />
 
-        <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test_image" />
-
-        <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test_image" />
-
-        <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test_image" />
-
-        <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test_image" />
-
-        <cn.ralken.library.arclayout.CustomImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/test_image" />
 
     </cn.ralken.library.arclayout.CircleLayout>
 

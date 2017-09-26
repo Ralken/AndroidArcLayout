@@ -6,7 +6,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import cn.ralken.library.arclayout.CircleLayout;
+import cn.ralken.library.arclayout.CircleLayoutAdapter;
+
 public class MainActivity extends AppCompatActivity {
+    CircleLayout mCircleLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +18,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        CircleLayoutAdapter adapter = new CircleLayoutAdapter();
+        adapter.add(R.drawable.test_image);
+        adapter.add(R.drawable.test_image);
+        adapter.add(R.drawable.test_image);
+        adapter.add(R.drawable.test_image);
+
+        mCircleLayout = (CircleLayout) findViewById(R.id.mCircleLayout);
+        mCircleLayout.setAdapter(adapter);
     }
 
     @Override
