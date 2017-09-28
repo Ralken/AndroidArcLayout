@@ -1,10 +1,10 @@
 package cn.ralken.library.arclayout;
 
-import java.util.LinkedList;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
+
+import java.util.LinkedList;
 
 /**
  * Created by x on 11/2/2014.

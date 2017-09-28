@@ -8,9 +8,6 @@
 
 package cn.ralken.library.arclayout;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
@@ -25,6 +22,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class CircleLayout extends ViewGroup {
 	private int radius_parameter = 250; // Radius offset
 	private int center_height_parameter = 0;// height offset
@@ -33,7 +33,7 @@ public class CircleLayout extends ViewGroup {
 	private int child_count = 10;
 
 	public interface OnChildClickListener{
-		void onChildClicked(CustomImageView child, int index);
+		void onChildClicked(ArcImageView child, int index);
 	}
 	
 	OnChildClickListener onChildClickListener;
@@ -82,7 +82,7 @@ public class CircleLayout extends ViewGroup {
 
 			for (int i = 0; i < child_count / 2; i++) {
 				int index = -1 * i;
-				CustomImageView civ = new CustomImageView(getContext(), this);
+				ArcImageView civ = new ArcImageView(getContext(), this);
 				civ.setLayoutParams(lp);
 				civ.setImageResource(adapter.get(index));
 			//	civ.setText("Test" + (index));
@@ -92,7 +92,7 @@ public class CircleLayout extends ViewGroup {
 			}
 			for (int i = child_count / 2; i > 0; i--) {
 				int index = i;
-				CustomImageView civ = new CustomImageView(getContext(), this);
+				ArcImageView civ = new ArcImageView(getContext(), this);
 				civ.setLayoutParams(lp);
 				civ.setImageResource(adapter.get(index));
 			//	civ.setText("Test" + (index));
@@ -251,8 +251,8 @@ public class CircleLayout extends ViewGroup {
 			final float centerAngle = startAngle;
 			final int x;
 			final int y;
-			if (child instanceof CustomImageView) {
-				CustomImageView civ = (CustomImageView) child;
+			if (child instanceof ArcImageView) {
+				ArcImageView civ = (ArcImageView) child;
 				civ.setRotationParameters((int) (centerAngle) + 90);
 			}
 			if (childs > 1) {
@@ -345,8 +345,8 @@ public class CircleLayout extends ViewGroup {
 		this.setAngleOffset((getAngleOffset() + distance));
 		for (int i = 0; i < getChildCount(); i++) {
 			final View child = getChildAt(i);
-			if (child instanceof CustomImageView) {
-				CustomImageView civ = (CustomImageView) child;
+			if (child instanceof ArcImageView) {
+				ArcImageView civ = (ArcImageView) child;
 				civ.setRotationParameters((int) (getAngleOffset()));
 
 			}
@@ -374,8 +374,8 @@ public class CircleLayout extends ViewGroup {
 		this.setAngleOffset(angle);
 		for (int i = 0; i < getChildCount(); i++) {
 			final View child = getChildAt(i);
-			if (child instanceof CustomImageView) {
-				CustomImageView civ = (CustomImageView) child;
+			if (child instanceof ArcImageView) {
+				ArcImageView civ = (ArcImageView) child;
 				civ.setRotationParameters((int) (getAngleOffset()));
 
 			}
@@ -406,7 +406,7 @@ public class CircleLayout extends ViewGroup {
 
 	public void updateChildAtIndex(int index) {
 		int replacment_index = ((-1 * (current_step + index)) % getChildCount() + getChildCount()) % getChildCount();
-		CustomImageView civ = new CustomImageView(getContext(), this);
+		ArcImageView civ = new ArcImageView(getContext(), this);
 		civ.setLayoutParams(lp);
 		civ.setBackgroundResource(adapter.get(current_step + index));
 	//	civ.setText("Test" + (current_step + index));

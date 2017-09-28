@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 
-public class CustomImageView extends ImageView {
+public class ArcImageView extends ImageView {
 	private int rotation_angle = 0;
 	// coordinates when motion down event
 	private float onMotionDown_X, onMotionDown_Y;
@@ -32,18 +32,18 @@ public class CustomImageView extends ImageView {
 		rotateByAnimation(rotation_angle);
 	}
 
-	public CustomImageView(Context context, CircleLayout cl) {
+	public ArcImageView(Context context, CircleLayout cl) {
 		super(context);
 		parent = cl;
 		init();
 	}
 
-	public CustomImageView(Context context, AttributeSet attrs) {
+	public ArcImageView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		init();
 	}
 
-	public CustomImageView(Context context, AttributeSet attrs, int defStyle) {
+	public ArcImageView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
 		init();
 	}

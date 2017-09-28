@@ -28,19 +28,19 @@
         android:layout_height="200dp"
         android:layout_gravity="bottom">
 
-        <cn.ralken.library.arclayout.CustomImageView
+        <cn.ralken.library.arclayout.ArcImageView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:src="@drawable/test_image" />
-        <cn.ralken.library.arclayout.CustomImageView
+        <cn.ralken.library.arclayout.ArcImageView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:src="@drawable/test_image" />
-        <cn.ralken.library.arclayout.CustomImageView
+        <cn.ralken.library.arclayout.ArcImageView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:src="@drawable/test_image" />
-        <cn.ralken.library.arclayout.CustomImageView
+        <cn.ralken.library.arclayout.ArcImageView
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:src="@drawable/test_image" />
