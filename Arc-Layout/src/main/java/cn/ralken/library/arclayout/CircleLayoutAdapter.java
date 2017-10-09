@@ -6,9 +6,6 @@ import android.util.DisplayMetrics;
 
 import java.util.LinkedList;
 
-/**
- * Created by x on 11/2/2014.
- */
 public class CircleLayoutAdapter {
 
 	private LinkedList<Integer> adapter = new LinkedList<Integer>();

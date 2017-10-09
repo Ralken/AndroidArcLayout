@@ -25,6 +25,14 @@ import android.widget.LinearLayout;
 import java.util.Timer;
 import java.util.TimerTask;
 
+/**
+ * A circle layout that contains at least 1 and 6 children maxniumn views,
+ * layout them as cricle around.
+ *
+ * @author liaoralken
+ * @version V1.0
+ * @date Oct 27, 2015
+ */
 public class CircleLayout extends ViewGroup {
 	private int radius_parameter = 250; 		// Radius offset
 	private int center_height_parameter = 0;	// height offset
