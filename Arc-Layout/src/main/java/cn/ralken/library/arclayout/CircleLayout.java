@@ -26,9 +26,9 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class CircleLayout extends ViewGroup {
-	private int radius_parameter = 250; // Radius offset
-	private int center_height_parameter = 0;// height offset
-	private int center_width_parameter = 0; // width offset
+	private int radius_parameter = 250; 		// Radius offset
+	private int center_height_parameter = 0;	// height offset
+	private int center_width_parameter = 0; 	// width offset
 	private CircleLayoutAdapter adapter;
 	private int child_count = 10;
 
